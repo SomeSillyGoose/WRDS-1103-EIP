@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="fade-in">
-        <h1>The Impact of Scrolling</h1>
-        <h2>Interactive reveal cards</h2>
-    </section>
+    <div style="padding: 200px 20px;">
+        <h1>Interactive Infographic: The Impact of Scrolling</h1>
+        <h2>Click on Each Card to Expand</h2>
+    </div>
 
-    <section class="fade-in">
+
+    <div class="fade-in">
         <h2>Scroll-triggered topic cards</h2>
         <div class="expand-card expand-card--left">
             <div class="card-extension" aria-hidden="true">
@@ -35,9 +36,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="fade-in">
+    <div class="fade-in">
         <h2>Alternating layout</h2>
         <div class="expand-card expand-card--right">
             <div class="card-main">
@@ -60,9 +61,32 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
+    <div class="fade-in">
+        <h2>Alternating layout</h2>
+        <div class="expand-card expand-card--right">
+            <div class="card-main">
+                <div class="card-main__body">
+                    <p>
+                        Alternating the square title block from left to right makes each section feel distinct while
+                        keeping the visual system consistent.
+                    </p>
+                </div>
+                <button class="card-trigger" type="button" aria-expanded="false" aria-controls="card-details-2">
+                    Motion
+                </button>
+            </div>
+            <div class="card-extension" id="card-details-2" aria-hidden="true">
+                <div class="card-extension__content">
+                    <p>
+                        The extension panel animates open beside the main card, creating a clear sense of progression
+                        instead of dumping all of the text on screen at once.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
-
 </html>

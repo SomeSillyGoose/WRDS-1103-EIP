@@ -5,12 +5,6 @@ body {
     color: #ffffff;
 }
 
-section {
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
 h1, h2 {
     text-align: center;
     color: #f8fbff;
@@ -19,6 +13,10 @@ h1, h2 {
 
 canvas {
     max-width: 100%;
+}
+
+p {
+    max-width: 90%;
 }
 
 .card {
@@ -30,6 +28,9 @@ canvas {
 }
 
 .fade-in {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
     opacity: 0;
     transform: translateY(30px);
     transition: all 1.2s ease;
@@ -114,7 +115,7 @@ canvas {
 .card-extension__content {
     width: 320px;
     min-height: 220px;
-    padding: 28px;
+    padding: 20px;
     display: flex;
     align-items: center;
     line-height: 1.7;
